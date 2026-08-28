@@ -3,6 +3,7 @@
     <title>Formulario de entrada del dato</title>
 </head>
 <body>
+    <!-- Formulario que envía los datos por método POST a pagina2.php -->
     <form method="post" action="pagina2.php">
         Ingrese su nombre:
         <input type="text" name="nombre" id="nombre">

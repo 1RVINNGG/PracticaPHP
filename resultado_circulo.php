@@ -1,6 +1,8 @@
 <?php
+// Se recibe el radio ingresado por el usuario
 $radio = $_REQUEST['radio'];
 
+// pi() devuelve el valor de π, pow() eleva el radio al cuadrado
 $area = pi() * pow($radio, 2);
 $perimetro = 2 * pi() * $radio;
 
