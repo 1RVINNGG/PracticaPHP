@@ -75,3 +75,68 @@ input[type=submit]:hover {
     font-size: 17px;
     margin: 8px 0;
 }
+.resultado {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.grafica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.circulo {
+    background-color: lightblue;
+    border: 3px solid blue;
+    border-radius: 50%;
+}
+.resultado {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.regla {
+    width: 500px;
+    height: 70px;
+    margin: 30px auto;
+    background-color: #f4d35e;
+    border: 2px solid #333;
+    position: relative;
+}
+
+/* Línea principal de la regla */
+.regla::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: repeating-linear-gradient(
+        to right,
+        transparent 0px,
+        transparent 49px,
+        #333 49px,
+        #333 51px
+    );
+}
+
+/* Números de la regla */
+.escala {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.conversion {
+    font-weight: bold;
+    font-size: 18px;
+}
