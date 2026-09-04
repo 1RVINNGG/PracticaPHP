@@ -1,13 +1,15 @@
 <html>
 <head>
-<title>Ejemplo</title>
+    <title>Ejemplo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1> Ejemplo simple .< /h1>
-Primer ejemplo de código PHP embebido dentro de
-código HTML .< br>
-<? php
+<div class="resultado">
+ 
+<?php
+// Aquí comienza el bloque de código PHP embebido dentro del HTML
 echo "Hola Mundo<br>";
 ?>
+</div>
 </body>
 </html>
