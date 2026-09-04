@@ -1,3 +1,10 @@
+<html>
+<head>
+    <title>Resultado - Círculo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="resultado">
 <?php
 // Se recibe el radio ingresado por el usuario
 $radio = $_REQUEST['radio'];
@@ -10,3 +17,6 @@ echo "<p>Radio: $radio</p>";
 echo "<p>El área de la circunferencia es: $area</p>";
 echo "<p>El perímetro de la circunferencia es: $perimetro</p>";
 ?>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* Fondo con degradado oscuro */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 40px;
+    color: #fff;
+}
+
+/* Tarjeta con efecto vidrio esmerilado */
+form, .resultado, .error {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Campos de entrada */
+input[type=text], input[type=number] {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+/* Botón */
+input[type=submit] {
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Mensajes de error */
+.error {
+    color: #ffb3b3;
+    border: 1px solid #ff4d4d;
+}
+
+/* Resultados */
+.resultado p {
+    font-size: 17px;
+    margin: 8px 0;
+}
